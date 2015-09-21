@@ -1,0 +1,13 @@
+								======================== Todo ======================
+
+											Todos, v1.0
+								=======================================================
+
+
+#1- Place the folder named "todo" in web directory folder
+for linux - /lamp/htdocs/todo
+
+#2- I am assuming that PHP server is enabled.
+
+#3- Web URL for the project
+http://localhost/todo

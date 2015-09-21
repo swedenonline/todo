@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Todos</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		 <link rel="stylesheet" type="text/css" href="resources/task.css">
+	</head>
+	<body>
+		<div id="main_div" class="main_div">
+			<div id="inner_main_div" class="inner_main_div">
+				<div class="header">
+					<label><H2>Todos</H2></label>
+				</div>
+				<div class="border"> </div>
+				<div class="input_with_btn_div">
+					<input type="text" placeholder="What needs to be done?" id="task" name="task" class="input_task" onkeydown="addTask('input',event);"/>
+					<button type="button" id="add_task" class="button" name="add_task" alt="Add Todo" onclick="addTask('button',event);">Add Todo</button>
+				</div>
+				<div id="list_task" name="list_task" class="list_task"></div>
+				<div class="border"> </div>
+				<div class="footer">
+					<div class="counter"><span id="left_counter">0</span> items left</div>
+					<div class="mark_all_link"><a href="#" onclick="markAllRead();">Mark all as complete</span></div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			var sortOrder = "DESC";
+		</script>
+		<script src="resources/task.js"></script>
+	</body>
+</html>
+
